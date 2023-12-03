@@ -1,0 +1,20 @@
+.first {
+    /* background: linear-gradient(90deg, crimson, skyblue);
+    background-size: 100% 2px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    transition-duration: 4s;
+    background-position: 0 1.15em; */
+    user-select: none;
+    font-size: 40px;
+    font-weight: 800;
+    background: linear-gradient(to right, rgb(227,248,105), rgb(72,163,255)) right bottom no-repeat;
+    background-size: 0px, 2px;
+    transition: 1s;
+}
+
+.first:hover{
+    background-size: 100% 2px;
+    background-position: left bottom;
+}
+

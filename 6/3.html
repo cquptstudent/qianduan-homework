@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>评论区</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        #commentInput {
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .comment {
+            padding: 10px;
+            /* margin-bottom: 10px; */
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .deleteButton {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: red;
+            display: none;
+        }
+
+        #commentCount {
+            margin-top: 10px;
+            font-size: xx-large;
+        }
+
+        button {
+            background-color: red;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            float: right;
+            border: 0;
+            width: 60px;
+        }
+
+        #commentAll{
+            position: relative;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="commentCount">评论(<span id="totalComments">0</span>)</div>
+        <textarea id="commentInput" placeholder="输入留言..."></textarea>
+        <button onclick="addComment()">评论</button>
+    </div>
+
+    <div id="commentAll"></div>
+
+
+
+    <script>
+        let totalComments = 0;
+
+        document.getElementById('totalComments').textContent = totalComments;
+
+        function addComment() {
+            const commentInput = document.getElementById('commentInput');
+            const commentAll = document.getElementById('commentAll');
+            const totalCommentsSpan = document.getElementById('totalComments');
+            const sizeofniputbox = document.getElementById('commentInput');
+            // sizeofniputbox.style.width=window.innerWidth;
+
+            if (commentInput.value.trim() == '') {
+                alert('不能提交空评论');
+                return;
+            }
+
+            const commentDiv = document.createElement('div');
+            commentDiv.className = 'comment';
+
+            const deleteButton = document.createElement('span');
+            deleteButton.className = 'deleteButton';
+            deleteButton.innerHTML = '删除';
+            deleteButton.onclick = function () {
+                commentAll.removeChild(commentDiv);
+                totalComments --;
+            document.getElementById('totalComments').textContent = totalComments;
+            };
+
+            commentDiv.innerText = commentInput.value;
+            commentDiv.appendChild(deleteButton);
+
+            commentDiv.addEventListener('contextmenu', function (event) {
+                event.preventDefault(); // Prevent the default right-click context menu
+                deleteButton.style.display = 'inline';
+            });
+
+            commentDiv.addEventListener('mouseleave', function () {
+                deleteButton.style.display = 'none';
+            });
+
+            commentAll.insertBefore(commentDiv, commentAll.firstChild);
+            commentInput.value = '';
+
+            totalComments ++;
+            document.getElementById('totalComments').textContent = totalComments;
+        }
+    </script>
+</body>
+
+</html>

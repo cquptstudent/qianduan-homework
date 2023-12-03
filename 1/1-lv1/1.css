@@ -1,0 +1,166 @@
+.link {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+#right_up {
+    float: right;
+    width: 600px;
+    height: 40px;
+    text-align: right;
+}
+
+#span {
+    background-color: #3385FF;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100px;
+    height: 40px;
+}
+
+#logo {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 154px;
+    width: 321px;
+}
+
+#search {
+    position: absolute;
+    top: 280px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 38px;
+    width: 450px;
+}
+
+
+
+.box {
+    width: 350px;
+    height: 32px;
+    position: absolute;
+    /* top: 0;
+    bottom: 0;
+    left: -10px;
+    right: 0;
+    margin: 0 auto; */
+    border-radius: 10px 0 0 10px;
+    float: left;
+}
+
+.press {
+    width: 100px;
+    height: 38px;
+    text-align: center;
+    position: relative;
+    right: 0;
+    background-color: #3385FF;
+    color: #FFFFFF;
+    float: right;
+    border-radius: 0 10px 10px 0;
+}
+
+#text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 19px;
+    width: 100px;
+}
+
+#logo2 {
+    position: absolute;
+    top: 500px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 138px;
+    width: 138px;
+}
+
+#middle_text {
+    position: absolute;
+    top: 640px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    height: 21px;
+    width: 94px;
+}
+
+#text2 {
+    position: absolute;
+    margin: 0 auto;
+    /* top: 0px; */
+    /* text-align: center; */
+}
+
+#mid_under{
+    position: absolute;
+    top: 670px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    height: 21px;
+    width: 200px;
+    color:#818fa1;
+}
+
+#bottom{
+    position: absolute;
+    top: 740px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    height: 21px;
+    width: 400px;
+    color:#818fa1;
+}
+.link2{
+    color: #818fa1;
+    text-decoration: none;
+} 
+
+#bottom{
+    position: absolute;
+    top: 740px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    height: 21px;
+    width: 400px;
+    color:#818fa1;
+}
+
+#bottom2{
+    position: absolute;
+    top: 765px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    height: 21px;
+    width: 600px;
+    color:#818fa1;
+}
