@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level1-3</title>
+    <link rel="stylesheet" href="./level1-1.css">
+</head>
+
+<body>
+
+    <div id="middle">
+        <div id="blue"></div>
+        <div id="orange"></div>
+        <div id="gray"></div>
+    </div>
+
+    <script>
+        let ballFirst = document.getElementById("blue");
+        let ballSecond = document.getElementById("orange");
+        let ballThird = document.getElementById("gray");
+
+        let a = [ballFirst, ballSecond, ballThird]
+
+        const move = function (object) {
+            object.style.transform = "translateX(220px)";
+            object.style.transitionDuration = "3000ms";
+        };
+
+        const add = function (n) {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    move(a[n]);
+                    resolve(n + 1);
+                }, 3000);
+            });
+        };
+
+        const movement = function (n) {
+            return add(n)
+                .then(res1 => add(res1))
+                .then(res2 => add(res2));
+        };
+
+        movement(0);
+    </script>
+</body>
+
+</html>
