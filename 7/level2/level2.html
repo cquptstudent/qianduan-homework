@@ -4,25 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        #bigbox {
-            width: 500px;
-            height: 300px;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            border: 1px solid;
-            position: absolute;
-            text-align: left;
-        }
-
-        h3{
-            text-align: center;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./level2.css">
 </head>
 
 <body>
@@ -32,32 +14,15 @@
     </div>
 
     <script>
-        const textArray = "元丰六年十月十二日夜，解衣欲睡，月色入户，欣然起行。念无与为乐者，遂至承天寺寻张怀民。怀民亦未寝，相与步于中庭。庭下如积水空明，水中藻、荇交横，盖竹柏影也。何夜无月？何处无竹柏？但少闲人如吾两人者耳。"//.split('');
-        const textElement = document.getElementById('text');
+        const textArray = "元丰六年十月十二日夜，解衣欲睡，月色入户，欣然起行。念无与为乐者，遂至承天寺寻张怀民。怀民亦未寝，相与步于中庭。庭下如积水空明，水中藻、荇交横，盖竹柏影也。何夜无月？何处无竹柏？但少闲人如吾两人者耳。"
+        let textElement = document.getElementById('text');
 
-        // function animateText(index) {
-        //     return new Promise((resolve) => {
-        //         setTimeout(() => {
-        //             textElement.innerHTML += textArray[index];
-        //             resolve();
-        //         }, 1000);
-        //     });
-        // }
-
-        // function startAnimation(index) {
-        //     if (index < textArray.length) {
-        //         animateText(index)
-        //             .then(() => startAnimation(index + 1));
-        //     }
-        // }
-
-        // startAnimation(0);
         function showWords(a) {
             return new Promise((resolve) => {
                 setTimeout(() => {
                     textElement.innerHTML += textArray[a];
                     resolve();
-                }, 100);
+                }, 1000);
             })
         }
 
