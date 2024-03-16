@@ -10,8 +10,5 @@ function compose(...functions) {
     }
 }
 
-// Test your compose function
-
-
 compose(add10, mul10, add100)(10).then(result => console.log(result))
 
