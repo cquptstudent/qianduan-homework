@@ -26,6 +26,7 @@ new Promise((resolve) => {
 
 console.log(2);
 ```
+
 ### 第一步
 1. 执行``console.log(1)``，输出``1``
 2. 执行``foo()``,``foo()``函数里面``console.log("start");``  
