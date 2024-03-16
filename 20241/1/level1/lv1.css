@@ -1,0 +1,20 @@
+#everything {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#result {
+    position: relative;
+    top: 8px;
+    text-decoration: underline 1px solid deeppink;
+}
+
+#textArea {
+    width: 140px;
+}
