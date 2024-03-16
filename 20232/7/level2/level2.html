@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="level2.css">
+</head>
+
+<body>
+    <div id="bigbox">
+        <h3>《记承天寺夜游》</h3>
+        <div id="text">&emsp;&emsp;</div>
+    </div>
+
+    <script>
+        const textArray = "元丰六年十月十二日夜，解衣欲睡，月色入户，欣然起行。念无与为乐者，遂至承天寺寻张怀民。怀民亦未寝，相与步于中庭。庭下如积水空明，水中藻、荇交横，盖竹柏影也。何夜无月？何处无竹柏？但少闲人如吾两人者耳。"
+        let textElement = document.getElementById('text');
+
+        function showWords(a) {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    textElement.innerHTML += textArray[a];
+                    resolve();
+                }, 200);
+            })
+        }
+
+        function start(a) {
+            if (a < textArray.length)
+                showWords(a).then(() => start(a + 1))
+        }
+
+        start(0)
+    </script>
+</body>
+
+</html>

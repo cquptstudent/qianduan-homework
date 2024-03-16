@@ -1,0 +1,16 @@
+#bigbox{
+    width: 500px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid;
+    position: absolute;
+    text-align: left;
+}
+
+h3{
+    text-align: center;
+}
