@@ -1,18 +1,14 @@
 function debounce(fn, delay = 500) {
-    let timer = null;
     let lastTime = new Date(0)
     console.log(`lastTime = ${lastTime}`)
-    return function() {
+    return function () {
         let nowTime = Date.now()
         console.log(`nowTime = ${nowTime}`)
-        if(nowTime - lastTime > delay) {
+        if (nowTime - lastTime > delay) {
             lastTime = nowTime
             return fn.apply(this, arguments);
         }
-        timer = setTimeout(() => {
-            fn.apply(this, arguments)
-            nowTime = new Date().getTime()
-        }, delay)
+        fn.apply(this, arguments)
     }
 }
 

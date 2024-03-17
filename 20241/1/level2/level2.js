@@ -11,4 +11,3 @@ function compose(...functions) {
 }
 
 compose(add10, mul10, add100)(10).then(result => console.log(result))
-
