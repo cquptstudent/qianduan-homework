@@ -8,7 +8,6 @@ function debounce(fn, delay = 500) {
             lastTime = nowTime
             return fn.apply(this, arguments);
         }
-        fn.apply(this, arguments)
     }
 }
 
