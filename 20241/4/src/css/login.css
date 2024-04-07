@@ -1,0 +1,68 @@
+#under_1 {
+    height: calc(100vh - 80px);
+    width: 100vw;
+}
+
+#login_window_2 {
+    width: 525px;
+    height: 795px;
+    /*background-color: pink;*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    border: black 1px solid;
+}
+
+#exit_3 {
+    width: 21px;
+    height: 21px;
+    float: right;
+}
+
+#picture_exit_4 {
+    width: 21px;
+    height: 21px;
+    float: right;
+}
+
+#word_3 {
+    font-family: "Microsoft YaHei UI", serif;
+    font-size: 40px;
+    position: relative;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#QR_code_3 {
+    width: 300px;
+    height: 300px;
+    top: 250px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /*background-color: red;*/
+    display: flex;
+}
+
+#other_way_3 {
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    top: calc(687px + 60px);
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#other_way_4 {
+    text-decoration: none;
+    color: gray;
+    font-family: "Microsoft YaHei UI", serif;
+}

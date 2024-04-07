@@ -1,0 +1,286 @@
+#under_1 {
+    width: 100%;
+    height: calc(85% + 80px);
+    overflow: hidden;
+    /*float: left;*/
+}
+
+#left_side_2 {
+    position: absolute;
+    height: 85%;
+    width: 14%;
+    border: gray solid;
+    border-width: 0 1px 0 0;
+    overflow: auto;
+    float: left;
+}
+
+.ge_dan_in_left_2 {
+    position: relative;
+    top: 40px;
+    /*background: white;*/
+    width: 100%;
+    height: 30px;
+    border: 0;
+    text-align: left;
+    flex-direction: row;
+    display: flex;
+    /*background-color: pink;*/
+}
+
+.not_clicked_or_not_in_3 {
+    font-size: 15px;
+    color: black;
+    /*color: black;*/
+    text-decoration: none;
+    width: 100%;
+    height: 30px;
+    /*background-color: pink;*/
+    /*top: 30px;*/
+}
+
+#My_favorite_icon_4 {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    /*top: 0;*/
+    top: 5px;
+}
+
+#right_side_2 {
+    width: 84%;
+    height: 85%;
+    position: absolute;
+    left: 225px;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    float: left;
+    /*background-color: gray;*/
+}
+
+#all_information_3 {
+    position: relative;
+    top: 19px;
+    /*left: 20px;*/
+    /*background-color: coral;*/
+    height: calc(100% - 30px);
+}
+
+#list_basic_information_4 {
+    height: 204px;
+    /*background-color: deeppink;*/
+    display: flex;
+}
+
+#pictures_5 {
+    width: 203px;
+    height: 203px;
+    float: left;
+    /*background-color: lightgreen;*/
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+#right_4__5 {
+    position: relative;
+    left: 42px;
+    top: 4px;
+    /*background-color: yellow;*/
+    height: 200px;
+    flex-direction: column;
+    width: 963px;
+}
+
+#detail_5 {
+    height: 157px;
+    /*position: relative;*/
+    /*background-color: lightcoral;*/
+}
+
+#list_name_6 {
+    font-size: 25px;
+    font-weight: bold;
+    height: 26px;
+    /*background-color: gold;*/
+    flex-direction: row;
+}
+
+#description_6 {
+    position: relative;
+    top: 20px;
+    color: gray;
+    height: 120px;
+    font-size: 13px;
+    /*max-height: 100px;*/
+    overflow: auto;
+    /*background-color: indigo;*/
+}
+
+#creator_6 {
+    position: relative;
+    top: 20px;
+    /*top: calc(69px - 26px - 32px);*/
+    height: 32px;
+    /*background-color: aquamarine;*/
+    width: 800px;
+    bottom: 0;
+}
+
+#head_7 {
+    position: relative;
+    top: 3px;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    /*background-color: darkturquoise;*/
+}
+
+#creator_name_7 {
+    position: relative;
+    width: fit-content;
+    top: -6px;
+    left: 2px;
+    height: 11px;
+    font-size: 10px;
+    /*background-color: indianred;*/
+}
+
+#create_time_7 {
+    position: relative;
+    width: fit-content;
+    top: -6px;
+    left: 5px;
+    font-size: 10px;
+    height: 11px;
+    /*background-color: greenyellow;*/
+}
+
+#buttons_3 {
+    position: relative;
+    top: 36px;
+    height: 36px;
+    /*background-color: slateblue;*/
+}
+
+#buttons_4 {
+    width: 250px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons_5 {
+    width: 80px;
+    height: 36px;
+    /*display: flex;*/
+    flex-direction: row;
+}
+
+.button_in_5_6 {
+    font-size: 16px;
+    display: flex;
+    line-height: 36px;
+}
+
+.checked {
+    font-weight: bold;
+}
+
+.checked::after {
+    position: relative;
+    top: 35px;
+    right: 35px;
+    content: "";
+    background-color: lightseagreen;
+    width: 16px;
+    height: 3px;
+    border-radius: 1px;
+}
+
+.number_7 {
+    font-size: 9px;
+    position: relative;
+    top: -2px;
+    font-family: Bahnschrift, serif;
+}
+
+.song_list_4 {
+    position: relative;
+    /*background-color: #ff7a9e;*/
+    top: 50px;
+}
+
+.songs_in_play_list_5 {
+    display: flex;
+    flex-direction: row;
+    height: 67px;
+    /*background-color: #d2d2d2;*/
+}
+
+.number_in_list_6 {
+    position: relative;
+    top: 8px;
+    height: 51px;
+    width: 51px;
+    text-align: center;
+    /*background-color: purple;*/
+    font-family: Bahnschrift, serif;
+    line-height: 51px;
+}
+
+.album_picture_6 {
+    position: relative;
+    left: 3px;
+    top: 8px;
+    height: 51px;
+    width: 51px;
+    /*background-color: dodgerblue;*/
+}
+
+.singer_title_6 {
+    position: relative;
+    top: 14px;
+    left: 10px;
+    height: 39px;
+    width: 567px;
+    /*background-color: paleturquoise;*/
+}
+
+.title_7 {
+    height: 19px;
+    width: 567px;
+    font-size: 16px;
+    white-space: nowrap;
+    /*white-space: nowrap;*/
+    max-width: 567px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*background-color: green;*/
+}
+
+.singer_7 {
+    position: relative;
+    top: 4px;
+    height: 16px;
+    font-size: 12px;
+    color: gray;
+    white-space: nowrap;
+    /*white-space: nowrap;*/
+    max-width: 567px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*background-color: lightcoral;*/
+}
+
+.album_name_6 {
+    position: relative;
+    left: 10px;
+    top: 26px;
+    font-size: 13px;
+    color: gray;
+    height: 15px;
+    /*background-color: pink;*/
+    width: 446px;
+}
