@@ -43,4 +43,5 @@ console.log(2);
 1. 完成微任务 ``console.log("end");`` 输出``end``
 2. 完成微任务 ``console.log("p2");`` 输出``p2``   
 3. 完成宏任务 ``setTimeout``中的``console.log("time");``,输出``time``
-> 输出顺序: ``1 start bar p1 2 end p2 time``
+> 输出顺序: ``1 start bar p1 2 end p2 time``   
+
