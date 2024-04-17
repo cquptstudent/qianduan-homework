@@ -56,16 +56,6 @@ function SingleList() {
         setTasks(tasks.map(task => ({...task, selected: false})))
         setSelectAll(false)
     }
-
-    // const handleSelectSingle = (id) => {
-    //     setTasks(tasks.map(task => {
-    //         if (task.id === id) {
-    //             return {...task, selected: !task.selected}
-    //         }
-    //         return task
-    //     }))
-    // }
-
     useEffect(() => {
         const interval = setInterval(() => {
             setTasks(prevTasks => (
